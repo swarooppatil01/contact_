@@ -1,0 +1,198 @@
+/* *{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
+text-transform: capitalize; 
+letter-spacing: 1px;
+}
+body{
+display: flex;
+justify-content: center; 
+align-items: center;
+width: 100%; 
+min-height: 100vh;
+background-image : url('/Users/swarooppatil/Desktop/Project/6191107.jpg');
+}
+.contact {
+color: #E9E9E9;
+position: relative;
+width: 500px; 
+height: 380px; 
+background-color : #000000;
+background-size: cover;
+background-position: center center; 
+box-shadow: 0 0 15px 6px rgba(0,0,0,.1); 
+border-radius: 20px; 
+display: flex;
+flex-flow: row nowrap; 
+justify-content: flex-end;
+align-items: center;
+}
+.contact .content{
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+width: 60%; 
+height: 100%;
+background: transparent ;
+position: relative;
+}
+.contact .content h2{
+color: #E9E9E9;
+font-size: 2rem;
+margin: 10% 0;
+}
+.contact .content .info{ height: 60%; 
+width: 100%; 
+display: flex;
+flex-flow: column nowrap; 
+justify-content: space-between;
+align-items: center;
+}
+
+.contact .content .info input{
+    width: 80%; 
+    height: 15%; 
+    padding-left: 10px;
+    color: #f1ebeb;
+    outline: none;
+     border: none; 
+     border-radius: 5px;
+    background: rgba(255, 111,111, 1); 
+    font-size: 8rem;
+}
+    .contact .content .info input::placeholder{
+         color: #f4efef;
+    }
+    .contact .content .info textarea::placeholder{
+    color: #f9f1f1;
+    }
+    .info input:hover::placeholder{
+    visibility: hidden;
+    }
+    .info textarea:hover::placeholder{
+    visibility: hidden;
+    }
+
+.contact .content .info textarea{
+ width: 80%; 
+height: 50%;
+padding: 15px ; 
+color: #f2ebeb; 
+outline: none; 
+border: none;
+ border-radius: 5px;
+background: rgba(255, 111,111, 1);
+overflow: auto; 
+font-size: 8rem;
+resize: none;
+}
+.contact .content .send{
+margin: 5% 0; 
+width: 40%; 
+height: 10%; 
+font-size: 1.2rem;
+color: #fff;
+border: none;
+background: #E9E9E9;
+box-shadow: 0 3px 5px 2px rgba(0,0,0,.1);
+border-radius: 30px; 
+display: flex;
+justify-content: center; 
+align-items: center;
+transition: 3s ease-out;
+font-weight: 700; background: rgb(250,150,106); 
+background-size: 200% 100%; 
+background: -moz-linear-gradient(80deg, rgba(250,150,106,1) 0%,
+rgba(252,64,57,1) 50%);
+background: -webkit-linear-gradient(80deg, rgba(250,150,106,1) 0%,
+rgba(252,64,57,1) 50%);
+background: linear-gradient(80deg, rgba(250,150,106,1) 0%,
+rgba(252,64,57,1) 50%);
+}
+@media screen and (max-width: 500px)  {
+.contact {
+width: 380px;
+height: 280px; 
+border-radius:10px;
+}
+.contact .content h2{
+font-size: 1.4rem;
+}
+.contact .content .info input{
+     font-size: 6rem;
+}
+.contact .content .info textarea{
+font-size: 6rem;
+}
+#send-button{ 
+font-size: .9rem;
+}
+} */
+html{
+    background-image: url('/Users/swarooppatil/Desktop/Project/back.jpg');
+    background-size:cover;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.1);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 15px 6px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #333;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px; /* Updated margin to center the picture */
+    display: block; /* Ensures block-level behavior */
+    transition: transform 0.3s ease;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
